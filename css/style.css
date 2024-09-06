@@ -9,7 +9,8 @@
     font-family: "Poppins", sans-serif;
 }
 body {
-    background-image: linear-gradient(to right, #281b9c, #8b5614 );
+    background-image: url(../imagens/Mapa_de_Runeterra.png);
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,6 +18,16 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+}
+header {
+    border: 0.3rem solid white;
+    padding: 0.3rem;
+
+}
+.titulo{
+    background-color: #daa520;
+    border: solid rgba(255, 255, 255, 0);
+    padding: 0 2rem;
 }
 h1 {
     font-size: 3rem;
@@ -34,18 +45,19 @@ section input {
     border: none;
     padding: 1rem;
     border-radius: 1.5rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     color: #2f2f30;
     font-size: 1rem;
     box-sizing: border-box;
 }
 section button {
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 3rem;
     border: none;
     border-radius: 1.5rem;
-    background-color:  #2a1caa;
-    color: #ffff;
-    font-size: 1rem;
+    background-color:  #daa520;
+    color: black;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: .2s;
 }
