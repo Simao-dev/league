@@ -1,41 +1,42 @@
+// "Base onde e feito a consulta"
 let dados = [
     {
         nome: "Ahri",
         imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/55e7e901b1f69d72804665cfbeb1f4f59c8fa877-496x560.jpg?auto=format&fit=fill&q=80&w=253",
         descricao: "Uma sensual raposa que encanta seus inimigos antes de devorá-los.",
-        rota: "mid",
-        classe: "mago",
-        tag: "mage flex enchantress"
+        rota: " Mid",
+        classe: " Mago",
+        tag: "mage flex enchantress, Faker"
     },
     {
         nome: "Garen",
         imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/2acb7715797d4183b09fdbfb902ff52a0aa4e0cf-496x560.jpg?auto=format&fit=fill&q=80&w=425",
         descricao: "Um guerreiro de Demacia, símbolo de justiça e honra.",
-        rota: "top",
-        classe: "lutador",
-        tag: "fighter top demacia"
+        rota: " Top",
+        classe: " Lutador",
+        tag: "fighter top demacia, espada"
     },
     {
         nome: "Vayne",
         imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/5312fde4581bdcab2353b9bed68b6fc3ce919501-496x560.jpg?auto=format&fit=fill&q=80&w=425",
         descricao: " A Caçadora Noturna, Vayne, é uma atiradora especializada em derrubar alvos únicos. Com sua agilidade e letalidade, ela se destaca em perseguir e eliminar inimigos fracos. Sua habilidade de aumentar seu dano crítico e furtividade a tornam uma ameaça formidável em lutas prolongadas.",
-        rota: "Bot Lane",
-        classe: "Atiradora (ADC - Attack Damage Carry)",
+        rota: " Bot",
+        classe: " Atiradora",
         tag: "Caçadora Letal agil Furtiva"
     },
     {
         nome: "Aatrox",
         imagem:"https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/db39563458aa28c3f3aa8990f2c964a0f7645097-496x560.jpg?auto=format&fit=fill&q=80&w=425",
         descricao: "Um antigo guerreiro Ascendido de Shurima, agora corrompido por uma espada Darkin. Aatrox é um lutador poderoso, com habilidades de cura e grande capacidade de sobrevivência.Rota: Top Lane (principalmente), mas pode ser flexionado para a Selva.Classe: Lutador Fighter",
-        rota: "Lutador",
-        classe: "Top Lane",
+        rota: " Lutador",
+        classe: " Top Lane",
         tag: " Imortal, Sangrento, Implacável"
     },
     {
         nome: "Akali",
         imagem:"https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/abbd173df157f943496abb0638add119f753e3b2-496x560.jpg?auto=format&fit=fill&q=80&w=425",
         descricao: " A Kunoichi da Névoa, Akali, é uma assassina veloz e letal, mestre em combate corpo a corpo. Ela utiliza neblina para se tornar invisível e eliminar seus inimigos com precisão cirúrgica.",
-        rota: "Mid Lane (Meio)",
+        rota: " Mid Lane (Meio)",
         classe: " Assassino (Assassin)",
         tag: "Ágil, Letal, Furtiva"
     },
@@ -43,48 +44,48 @@ let dados = [
         nome: "Akshan",
         imagem:"https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9e5ea58123ac5a699700eec49f8412af11e563a0-496x560.jpg?auto=format&fit=fill&q=80&w=425",
         descricao: "O Sentinela Rebelde, Akshan, é um atirador único que combina alta mobilidade com a capacidade de reviver aliados caídos. Sua arma em formato de gancho lhe permite se deslocar pelo mapa e marcar inimigos, os quais, ao eliminarem aliados, são automaticamente revividos por Akshan.",
-        rota: "Meio (Mid Lane)",
+        rota: " Meio",
         classe: " Atirador (ADC) com elementos de Assassino",
-        tag: "Ágil, Vingativo, Reivindicador"
+        tag: "Ágil, Vingativo, Reivindicador, mid"
     },
     {
         nome: "Alistar",
         imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/da8cefee5b85bca51360ccc1635ef5b0f6967767-496x560.jpg?auto=format&fit=fill&q=80&w=425",
         descricao: "O Minotauro, Alistar, é um tanque resistente e agressivo, capaz de iniciar lutas em equipe e proteger seus aliados. Seus chifres e força bruta o tornam uma força a ser considerada no campo de batalha.",
-        rota: "Suporte",
-        classe: "Tanque (Tank)",
+        rota: " Suporte",
+        classe: " Tanque (Tank)",
         tag: " Resistente, Iniciação, Protetor"
     },
     {
         nome: "Amumu",
         imagem:"https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/092febba8905cff35940d036fd20b7e3ad4f428f-496x560.jpg?auto=format&fit=fill&q=80&w=425",
         descricao: "A Múmia Chorona é um tanque solitário que busca amizades. Apesar de sua aparência assustadora, ele é um aliado leal e forte. Suas habilidades causam dano em área e o permitem controlar o campo de batalha.",
-        rota: "Selva",
-        classe: "Tanque",
+        rota: " Selva",
+        classe: " Tanque",
         tag: "Solitário, Chorão, Controle de multidão"
     },
     {
         nome: "Anivia",
         imagem:"https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b9081057a6282c7c7f074dc9cec094b8d51df9bf-496x560.jpg?auto=format&fit=fill&q=80&w=425",
         descricao: "O Cisne de Gelo é uma maga que controla o gelo e a neve. Ela é conhecida por sua habilidade de criar paredes de gelo para dividir o campo de batalha e causar dano em área.",
-        rota: "Meio",
-        classe: "Meio (Maga)",
-        tag: " Gelo, Controle de mapa, Artilheira"
+        rota: " Meio",
+        classe: " Maga",
+        tag: " Gelo, Controle de mapa, Artilheira, Maga"
     },
     {
         nome:"Annie",
         imagem:"https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/220684b035ca0a0dc0d93c17ee058872d7c2a4e9-496x560.jpg?auto=format&fit=fill&q=80&w=425",
         descricao:"Perigosa, mas adoravelmente precoce, Annie é uma pequena maga com imenso poder piromaníaco. Mesmo isolada nas sombras das montanhas ao norte de Noxus, ela causa estranhamento com sua magia. Sua afinidade natural com o fogo já era evidente desde a...",
-        rota:"Meio/Suporte",
-        classe:"Mago",
+        rota:" Meio/Suporte",
+        classe:" Mago",
         tag:"criança, fogo, uso,",
     },
     {
         nome: "Aphelios",
         imagem: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_0.jpg",
         descricao: " O Atendente da Lua é um atirador único que utiliza cinco armas lunares diferentes, cada uma com suas próprias características. Sua mecânica de jogo é complexa e exige habilidade para dominar.",
-        rota: "Bot",
-        classe: "Atirador",
+        rota: " Bot",
+        classe: " Atirador",
         tag: "Lunar, Versátil, Complexo"
     },
     {
@@ -107,48 +108,48 @@ let dados = [
         nome: "Aurora",
         imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/2984fc54c2eccfed432ac8a78e90757b574178c4-418x473.jpg?auto=format&fit=fill&q=80&w=418",
         descricao: "Desde que nasceu, Aurora vive com uma habilidade inigualável de viajar entre os reinos dos mortais e dos espíritos. Determinada a aprender mais sobre os habitantes do reino espiritual, ela deixou seu lar para trás com o objetivo de conduzir mais",
-        rota: "Top",
-        classe: "Mago/Assassino",
+        rota: " Top",
+        classe: " Mago/Assassino",
         tag: "Atirador, mago, coelho"
     },
     {
         nome: "Azir",
         imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/1636aeb5f8d604f7d3336428918146cac62c28e7-496x560.jpg?auto=format&fit=fill&q=80&w=425",
         descricao: "O Imperador das Areias é um mago que comanda exércitos de soldados de areia. Ele é um líder nato, capaz de manipular o terreno e criar estruturas para defender seus aliados.",
-        rota: "Meio",
-        classe: "Mago",
-        tag: "Imperador, Areia, Controle de mapa"
+        rota: " Meio",
+        classe: " Mago",
+        tag: "Imperador, Areia, Controle de mapa, egito"
     },
     {
         nome: "Bardo",
         imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9679cce427dbc633348fc330806543a3ff2509a9-496x560.jpg?auto=format&fit=fill&q=80&w=425",
         descricao: "O Vagante Cósmico é um suporte único que explora o mapa em busca de chimes cósmicos. Ele oferece utilidade à sua equipe com suas habilidades de cura, lentidão e deslocamento.",
-        rota: "Suporte",
-        classe: "Suporte",
+        rota: " Suporte",
+        classe: " Suporte",
         tag: "Cósmico, Explorador, Utilitário"
     },
     {
         nome: "Bel'Veth",
         imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/63cbd4e3da7484ffde0130784bcc879b50652f53-496x560.jpg?auto=format&fit=fill&q=80&w=425",
         descricao: "A Rainha Vazia é uma assassina monstruosa que emerge das profundezas para devorar tudo em seu caminho. Ela é extremamente ágil e possui um kit de habilidades focado em perseguição e assassinato.",
-        rota: "Selva",
-        classe: "Assassina",
+        rota: " Selva",
+        classe: " Assassina",
         tag: "Monstruosa, Vazio, Caçadora"
     },
     {
         nome: "Blitzcrank",
         imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/c6db939c90bf8e10b1b9baf77bc99c9bcd2d6981-496x560.jpg?auto=format&fit=fill&q=80&w=425",
         descricao: "O Grande Golem de Vapor é um suporte tanque com um gancho icônico que permite puxar os inimigos para perto. Ele é conhecido por sua capacidade de iniciar lutas e proteger seus aliados.",
-        rota: "Suporte",
-        classe: "Tanque",
+        rota: " Suporte",
+        classe: " Tanque",
         tag: "Gancho, Mecânico, Iniciação"
     },
     {
         nome: "Brand",
         imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/6dd885169af0eeb3d662923df8a87973ee13844f-496x560.jpg?auto=format&fit=fill&q=80&w=425",
         descricao: "O Piromante é um mago de longo alcance que inflige dano mágico em área e aplica efeitos de queimadura. Seus feitiços são perfeitos para controlar o campo de batalha e eliminar múltiplos inimigos.",
-        rota: "Meio",
-        classe: "Mago",
+        rota: " Meio",
+        classe: " Mago",
         tag: "Fogo, Queimadura, Área de efeito"
     },
     {
@@ -1273,7 +1274,7 @@ let dados = [
     },
     {
         nome: "Yorick",
-        imagem: "",
+        imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/38d1cc6f80ca931c894f36c222bad76cfe1a25da-496x560.jpg?auto=format&fit=fill&q=80&w=352",
         descricao: " Um sacerdote que invoca os mortos para lutar por ele.",
         rota: "Topo",
         classe: "Lutador",

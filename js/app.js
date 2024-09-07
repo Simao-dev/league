@@ -1,9 +1,12 @@
 function pesquisar() {
+    // Obtém a seção HTML onde os resultados serão exibidos
     let section = document.getElementById
     ("resultados-pesquisa");
 
     let campoPesquisa = document.getElementById
     ("campo-pesquisa").value
+
+     // se campoPesquisa for uma string sem nada
 
     if (!campoPesquisa) {
         section.innerHTML = "<p> Digite um nome valido</p>"
