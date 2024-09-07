@@ -75,7 +75,8 @@ section button:hover {
 .item-resultado {
     width: 285px;
     height: auto;
-    background-color: #ffff;
+    border: 12px solid rgb(212, 195, 140);
+    background-color: rgb(14, 7, 27);
     border-radius: 0.6rem;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -87,7 +88,7 @@ section button:hover {
 .item-resultado h2 {
     text-align: center;
     font-size: 1.5rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .item-resultado a {
     text-decoration: none;
@@ -97,8 +98,17 @@ section button:hover {
     text-decoration: underline;
 }
 .descricao-meta {
-    color: black;
+    color: rgb(255, 255, 255);
     margin: o.5rem 0;
+}
+.extras {
+    color: white;
+}
+.rotas {
+    color: white;
+}
+.classe {
+    color: white;
 }
 footer {
     background-color: #ffff;

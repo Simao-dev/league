@@ -39,9 +39,9 @@ function pesquisar() {
                     </h2>
                     <img src="${dado.imagem}" alt="${dado.nome}">
                     <p class="descricao-meta">${dado.descricao}</p>
-                    <h3>extras</h3>
-                    <p>Rotas:${dado.rota}</p>
-                    <p>Classe:${dado.classe}</p>
+                    <h3 class="extras">extras</h3>
+                    <p class="rotas">Rotas:${dado.rota}</p>
+                    <p class="classe">Classe:${dado.classe}</p>
                 </div>
                 `;
         }
