@@ -2,14 +2,16 @@
  
  1. Introdução
     ° Objetivo do projeto: 
-        Econtrar informações basicas sobre os personagens de league of legends, sendo Agil e de fácil uso.
+        Econtrar informações basicas sobre os personagens de league of legends, sendo Ágil e de fácil uso.
     ° Público-alvo: 
         Players de league of legends.
     ° Tecnologias utilizadas: 
         HTML, CSS, JavaScript.
  2. Pré-requisitos
-    ° Software necessário: Editores de código (Visual Studio Code, Sublime Text), navegador web.
-    ° Conhecimento prévio: Nível básico de HTML, CSS e JavaScript.
+    ° Software necessário: 
+        Editores de código (Visual Studio Code, Sublime Text), navegador web.
+    ° Conhecimento prévio: 
+        Nível básico de HTML, CSS e JavaScript.
  3. Instalação
     ° Clonagem do repositório: 
         Acesse à página principal do repositório no GitHub.com, Clicar no repositorio de arquivos, na aba "code" selecionar a opção "Abrir com GitHub desktop".
